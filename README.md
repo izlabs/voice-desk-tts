@@ -222,6 +222,12 @@ Typical flow:
 - Web Workers
 - Optional serverless API routes for model listing and file delivery
 
+## Model and Dataset Responsibility
+
+- Some bundled, referenced, or catalog-listed voice models may originate from third-party or community sources.
+- You are responsible for verifying licenses, attribution requirements, redistribution rights, and commercial-use eligibility before using or publishing any model or dataset.
+- If you train or fine-tune models with your own recordings or collected datasets, you are responsible for obtaining the necessary rights, consents, and legal permissions for that data and any generated voice output.
+
 ## License and Attribution
 
 This repository has split licensing:

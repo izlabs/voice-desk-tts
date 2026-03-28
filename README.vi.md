@@ -204,6 +204,12 @@ Luồng làm việc điển hình:
 3. Chép cặp file sang `public/tts-model/<lang>/`.
 4. Chạy app local để test voice mới.
 
+## Trách nhiệm về model và dữ liệu
+
+- Một số model giọng nói được đóng gói, tham chiếu, hoặc lấy từ catalog có thể đến từ nguồn bên thứ ba hoặc nguồn cộng đồng.
+- Người sử dụng cần tự kiểm tra giấy phép, yêu cầu attribution, quyền phân phối lại, và khả năng dùng cho mục đích thương mại trước khi dùng hoặc public model hay dataset.
+- Nếu bạn tự train hoặc fine-tune model bằng bản ghi âm hoặc dữ liệu riêng, bạn tự chịu trách nhiệm về quyền dữ liệu, sự đồng ý của chủ thể giọng nói, và việc tuân thủ các quy định pháp luật liên quan đến dữ liệu và giọng nói được tạo ra.
+
 ## License và attribution
 
 Repo này có ranh giới license tách lớp:
