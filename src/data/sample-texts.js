@@ -1,0 +1,60 @@
+export const SAMPLE_TEXTS = {
+  ar_JO: 'مرحبًا، هذا مثال قصير لاختبار جودة الصوت والإيقاع.',
+  bg_BG: 'Здравейте, това е кратък пример за тестване на гласа и ритъма.',
+  ca_ES: 'Hola, aquesta és una mostra breu per provar la veu i el ritme.',
+  cs_CZ: 'Dobrý den, toto je krátká ukázka pro test hlasu a rytmu.',
+  cy_GB: 'Helo, dyma sampl byr i brofi y llais a’r rhythm.',
+  da_DK: 'Hej, dette er en kort prøve for at teste stemme og rytme.',
+  de_DE: 'Hallo, dies ist ein kurzer Beispieltext zum Testen von Stimme und Rhythmus.',
+  el_GR: 'Γεια σας, αυτό είναι ένα σύντομο δείγμα για έλεγχο της φωνής και του ρυθμού.',
+  en_GB: 'Hello, this is a short sample for testing voice quality and rhythm.',
+  en_US: 'Hello, this is a short sample for testing voice quality and rhythm.',
+  es_AR: 'Hola, este es un ejemplo breve para probar la voz y el ritmo.',
+  es_ES: 'Hola, este es un ejemplo breve para probar la voz y el ritmo.',
+  es_MX: 'Hola, este es un ejemplo breve para probar la voz y el ritmo.',
+  fa_IR: 'سلام، این یک نمونه کوتاه برای آزمایش صدا و ریتم است.',
+  fi_FI: 'Hei, tämä on lyhyt esimerkki äänen ja rytmin testaamiseen.',
+  fr_FR: 'Bonjour, ceci est un court exemple pour tester la voix et le rythme.',
+  hi_IN: 'नमस्ते, यह आवाज़ और लय की जाँच के लिए एक छोटा उदाहरण है।',
+  hu_HU: 'Szia, ez egy rövid minta a hang és a ritmus teszteléséhez.',
+  id_ID: 'Halo, ini contoh singkat untuk menguji suara dan ritme.',
+  is_IS: 'Halló, þetta er stutt sýnishorn til að prófa rödd og hrynjandi.',
+  it_IT: 'Ciao, questo è un breve esempio per testare la voce e il ritmo.',
+  ka_GE: 'გამარჯობა, ეს არის მოკლე ნიმუში ხმისა და რიტმის შესამოწმებლად.',
+  kk_KZ: 'Сәлем, бұл дауыс пен ырғақты тексеруге арналған қысқа үлгі.',
+  lb_LU: 'Moien, dëst ass e kuerzt Beispill fir Stëmm a Rhythmus ze testen.',
+  lv_LV: 'Sveiki, šis ir īss paraugs balss un ritma pārbaudei.',
+  ml_IN: 'നമസ്കാരം, ശബ്ദവും താളവും പരിശോധിക്കാൻ ഉള്ള ചെറിയ ഒരു മാതൃകയാണ് ഇത്.',
+  ne_NP: 'नमस्ते, यो आवाज र लय परीक्षणका लागि छोटो नमूना हो।',
+  nl_BE: 'Hallo, dit is een kort voorbeeld om stem en ritme te testen.',
+  nl_NL: 'Hallo, dit is een kort voorbeeld om stem en ritme te testen.',
+  no_NO: 'Hei, dette er et kort eksempel for å teste stemme og rytme.',
+  pl_PL: 'Cześć, to jest krótki przykład do testowania głosu i rytmu.',
+  pt_BR: 'Olá, este é um exemplo curto para testar a voz e o ritmo.',
+  pt_PT: 'Olá, este é um exemplo curto para testar a voz e o ritmo.',
+  ro_RO: 'Salut, acesta este un exemplu scurt pentru a testa vocea și ritmul.',
+  ru_RU: 'Здравствуйте, это короткий пример для проверки голоса и ритма.',
+  sk_SK: 'Dobrý deň, toto je krátka ukážka na test hlasu a rytmu.',
+  sl_SI: 'Pozdravljeni, to je kratek primer za preizkus glasu in ritma.',
+  sr_RS: 'Zdravo, ovo je kratak primer za proveru glasa i ritma.',
+  sv_SE: 'Hej, det här är ett kort exempel för att testa röst och rytm.',
+  sw_CD: 'Hujambo, huu ni mfano mfupi wa kujaribu sauti na mdundo.',
+  te_IN: 'నమస్కారం, ఇది స్వరం మరియు లయను పరీక్షించడానికి ఒక చిన్న ఉదాహరణ.',
+  tr_TR: 'Merhaba, bu ses ve ritmi test etmek için kısa bir örnektir.',
+  uk_UA: 'Вітаю, це короткий приклад для перевірки голосу та ритму.',
+  vi_VN: 'Nhập đoạn văn tiếng Việt để thử giọng đọc, kiểm tra nhịp ngắt nghỉ và xuất WAV ngay trong studio.',
+  zh_CN: '你好，这是一个用于测试语音效果和节奏的简短示例。',
+};
+
+export function getSampleText(languageCode) {
+  const family = languageCode.split(/[_-]/)[0];
+
+  const familyFallbacks = {
+    en: SAMPLE_TEXTS.en_US,
+    es: SAMPLE_TEXTS.es_ES,
+    pt: SAMPLE_TEXTS.pt_PT,
+    nl: SAMPLE_TEXTS.nl_NL,
+  };
+
+  return SAMPLE_TEXTS[languageCode] || familyFallbacks[family] || SAMPLE_TEXTS.en_US;
+}

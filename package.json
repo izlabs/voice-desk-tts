@@ -1,0 +1,32 @@
+{
+  "name": "voice-desk-tts",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Voice Desk TTS: a browser-first Piper TTS workspace for testing voices, previewing output, and exporting WAV files.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "catalog:piper": "node ./scripts/sync-piper-catalog.mjs",
+    "download:demo-voices": "node ./scripts/download-demo-voices.mjs",
+    "format": "prettier --write .",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.22.0",
+    "phonemizer": "file:phonemizer-1.2.2.tgz",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@vitejs/plugin-react": "^4.7.0",
+    "busboy": "^1.6.0",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.1"
+  }
+}
