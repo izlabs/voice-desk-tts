@@ -1,24 +1,22 @@
 # Contributing
 
-Thanks for considering a contribution to `Voice Desk TTS`.
+Thanks for contributing to `Voice Desk TTS`.
 
 ## Project focus
 
-This repository is centered on a browser-first Piper TTS workspace.
+Voice Desk TTS is a browser-first Piper TTS workspace. Contributions are most useful when they improve one of these areas:
 
-Good contribution areas:
-
-- React UI and UX improvements for the TTS workspace
-- Piper model loading and browser runtime stability
-- Piper catalog sync and metadata tooling
+- React UI and UX for the TTS workflow
+- browser runtime stability and model-loading reliability
+- Piper catalog sync, metadata tooling, and local model management
 - documentation, release prep, and deployment polish
-- training guides and Colab workflow improvements
+- Colab workflow and training guide quality
 
-Please discuss first if the change would:
+Please open an issue or discussion first if a change would:
 
-- expand the main app into a mixed ASR + TTS product again
-- add large unrelated demo bundles or sample packs into the repo
-- present experimental browser support as if it were stable
+- expand the project back into a mixed ASR and TTS product
+- add large unrelated demo bundles or dataset packs to the repository
+- present experimental browser support as if it were production-stable
 
 ## Local workflow
 
@@ -28,15 +26,18 @@ npm run lint
 npm run build
 ```
 
-## Before opening a PR
+## Pull request checklist
 
-- keep the repo scoped to TTS-first product goals
-- document browser limitations honestly
-- preserve attribution and license boundaries
-- avoid adding third-party model files unless redistribution rights are clear
+Before opening a PR, please make sure your contribution:
 
-## Licensing
+- keeps the repository aligned with its TTS-first product scope
+- documents browser limitations honestly
+- preserves attribution and licensing boundaries
+- avoids bundling third-party models or datasets unless redistribution rights are clear
+- keeps public-facing docs concise, accurate, and product-focused
 
-The root web app is Apache-2.0.
+## Licensing and third-party assets
 
-Read [ATTRIBUTION.md](./ATTRIBUTION.md) before contributing anything that touches models, datasets, checkpoints, or generated voice assets.
+The root web app is Apache-2.0, but models, datasets, checkpoints, and generated voice assets may be governed by separate terms.
+
+Please read [ATTRIBUTION.md](./ATTRIBUTION.md) before contributing anything that touches third-party assets or training data.

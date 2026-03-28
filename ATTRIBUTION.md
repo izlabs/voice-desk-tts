@@ -1,28 +1,48 @@
-# Attribution and License Notes
+# Attribution and Licensing Notes
 
-Voice Desk TTS builds on the Piper ecosystem and a public fork lineage that included `nghitts`.
+Voice Desk TTS is part of the broader Piper ecosystem and interoperates with third-party voice models, checkpoints, catalogs, and datasets.
 
-The current repository has been reshaped into a React-based, TTS-only workspace. Even so, upstream notices and redistribution boundaries should remain clear.
+This repository primarily distributes application code, metadata, and workflow documentation. It does not automatically grant rights to any third-party model, checkpoint, dataset, or generated audio used alongside the app.
 
-## License scope
+## What the Apache-2.0 license covers
 
-- Repository root web app code is distributed under the Apache License 2.0. See [LICENSE](./LICENSE).
-- Colab notebooks and training guides are included as workflow documentation and helper tooling.
-- Official Piper voice files, checkpoints, datasets, and generated voice assets are not covered by the root Apache license.
+The root [LICENSE](./LICENSE) applies to:
 
-## Upstream projects and sources
+- the web application source code in this repository
+- project documentation, examples, and helper scripts unless stated otherwise
 
-- Piper TTS
+## What the Apache-2.0 license does not automatically cover
+
+The root repository license does not automatically apply to:
+
+- third-party Piper voice files
+- model checkpoints
+- downloaded or user-supplied datasets
+- generated voice assets
+- redistributed catalogs, metadata bundles, or packaged voice collections when upstream terms require separate notices
+
+## Upstream technologies and sources
+
+Voice Desk TTS relies on, or is designed to work with, projects and sources such as:
+
+- Piper
 - ONNX Runtime Web
 - React
 - Vite
-- Official Piper voice catalog from `rhasspy/piper-voices`
+- official Piper voice metadata and related community-published model sources
 
-## Redistribution reminder
+Please review the license and usage terms of each upstream project or asset source before redistribution or commercial use.
 
-This repository mainly ships code, metadata, and workflow documentation. If you add voices, checkpoints, datasets, or generated audio:
+## Responsibilities for users and contributors
 
-- verify that you have redistribution rights
-- preserve upstream license notices where required
-- keep dataset and speaker-consent restrictions with exported files
-- do not assume Apache-2.0 from the app also covers trained voices or third-party assets
+If you add, publish, mirror, or redistribute any model, checkpoint, dataset, or generated audio through this project, you are responsible for:
+
+- verifying the original license terms
+- preserving required notices and attribution
+- confirming redistribution and commercial-use rights
+- respecting speaker consent, privacy, and dataset restrictions
+- complying with applicable laws and platform rules in your jurisdiction
+
+## Practical rule of thumb
+
+Treat Voice Desk TTS as Apache-licensed application code, and treat models, datasets, checkpoints, and generated media as separate assets that require their own license and rights review.
