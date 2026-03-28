@@ -11,7 +11,7 @@ Test voices locally, preview output quickly, and export WAV files from a clean l
 <p align="center">
   <a href="#quick-start">Quick Start</a> &bull;
   <a href="./docs/training-en.md">Training Guide</a> &bull;
-  <a href="./README.vi.md">Tiếng Việt</a>
+  <a href="./README.vi.md">Tiếng Việt</a> &bull;
   <a href="https://voice-desk-tts.pages.dev/">Demo</a>
 </p>
 
