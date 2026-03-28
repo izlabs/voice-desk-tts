@@ -100,8 +100,8 @@ Each model requires:
 
 If you want a quick starting point, you can download the bundled Vietnamese model pack here:
 
-- Release page: `https://github.com/izlabs/voice-desk-tts-assets/releases/tag/v0.1.0`
-- Direct download: `https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip`
+- [Release page](https://github.com/izlabs/voice-desk-tts-assets/releases/tag/v0.1.0)
+- [Download Vietnamese model pack](https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip)
 
 Extract the archive and place the `.onnx` and `.onnx.json` pairs into `public/tts-model/vi/`.
 
@@ -213,13 +213,11 @@ Colab notebook:
 
 Default public sample dataset used by the notebook:
 
-- `audio_train_demo.zip`
-- Release asset: `https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/audio_train_demo.zip`
+- [Download sample training dataset (`audio_train_demo.zip`)](https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/audio_train_demo.zip)
 
 Prebuilt Vietnamese model pack:
 
-- `voice-desk-tts-vi-model-pack.zip`
-- Release asset: `https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip`
+- [Download Vietnamese model pack (`voice-desk-tts-vi-model-pack.zip`)](https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip)
 
 Typical flow:
 

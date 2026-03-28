@@ -91,8 +91,8 @@ Mỗi model cần đúng 2 file:
 
 Nếu muốn test nhanh, bạn có thể tải bộ model tiếng Việt dựng sẵn tại đây:
 
-- Trang release: `https://github.com/izlabs/voice-desk-tts-assets/releases/tag/v0.1.0`
-- Link tải trực tiếp: `https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip`
+- [Trang release](https://github.com/izlabs/voice-desk-tts-assets/releases/tag/v0.1.0)
+- [Tải bộ model tiếng Việt](https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip)
 
 Giải nén rồi chép các cặp `.onnx` và `.onnx.json` vào `public/tts-model/vi/`.
 
@@ -204,13 +204,11 @@ Notebook Colab:
 
 Sample dataset public mặc định trong notebook:
 
-- `audio_train_demo.zip`
-- Link release asset: `https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/audio_train_demo.zip`
+- [Tải sample dataset để train (`audio_train_demo.zip`)](https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/audio_train_demo.zip)
 
 Bộ model tiếng Việt dựng sẵn:
 
-- `voice-desk-tts-vi-model-pack.zip`
-- Link release asset: `https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip`
+- [Tải bộ model tiếng Việt (`voice-desk-tts-vi-model-pack.zip`)](https://github.com/izlabs/voice-desk-tts-assets/releases/download/v0.1.0/voice-desk-tts-vi-model-pack.zip)
 
 Luồng làm việc điển hình:
 
