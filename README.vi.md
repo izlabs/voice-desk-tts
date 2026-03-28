@@ -11,7 +11,8 @@ Thử giọng đọc local, nghe lại nhanh, và xuất WAV từ một phiên l
 <p align="center">
   <a href="#chạy-nhanh">Chạy Nhanh</a> &bull;
   <a href="./docs/training-vi.md">Hướng Dẫn Train</a> &bull;
-  <a href="./README.md">English</a>
+  <a href="./README.md">English</a> &bull;
+  <a href="https://voice-desk-tts.pages.dev/">Demo</a>
 </p>
 
 <p align="center">
